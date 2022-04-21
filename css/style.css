@@ -2,17 +2,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* GLOBAL STYLES */
 
 :root {
   --font-primary: 'Lato', sans-serif;
   --font-secondary: 'Arvo', serif;
+  --font-3: 'Rubik Glitch', cursive;
+  --font-4: 'Press Start 2P', cursive;
   --font-code: 'Roboto', monospace;
   --bg-color: #000000;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #e8aa23;
+  --accent-color: #BD9E5A;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -86,10 +89,10 @@ header .navbar {
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
-  font-family: var(--font-secondary);
+  font-family: var(--font-4);
   font-style: italic;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .75rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
   box-shadow: 4px 4px 0 0 var(--accent-color);
@@ -106,12 +109,12 @@ header .navbar {
 .wallet-btn {
   border-radius: 5rem;
   border-color: transparent;
+  font-size: .65rem;
 }
 
 .hero-btn {
   border-radius: 4px;
-  font-size: 1.2rem;
-  padding: .75rem 1.5rem;
+  padding: .75rem 1rem;
 }
 
 /* BANNER */
@@ -177,15 +180,16 @@ section {
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
-  font-style: italic;
+  /* font-style: italic; */
   margin: 2rem 0;
-  font-size: 3.5rem;
+  font-size: 1.25rem;
   text-align: center;
+  font-family: var(--font-4);
 }
 
 .countdown p {
-  font-size: 1rem;
-  font-family: var(--font-secondary);
+  font-size: .75rem;
+  font-family: var(--font-4);
   margin-bottom: 1rem;
   text-align: center;
   color: var(--accent-color);
@@ -200,7 +204,9 @@ section {
 
 /* Icons */
 .discord_icon {
-  padding-top: 5px;
+  color: var(--accent-color);
+  font-size: 25px;
+  vertical-align: middle;
 }
 
 .scroll_down-container {
@@ -219,11 +225,12 @@ section {
 }
 
 .scroll_down {
-  font-family: var(--font-secondary);
+  font-family: var(--font-4);
   text-decoration: none;
   color: var(--accent-color);
   text-align: center;
   font-weight: 100;
+  font-size: .75rem;
 }
 
 .scroll_down:hover {
