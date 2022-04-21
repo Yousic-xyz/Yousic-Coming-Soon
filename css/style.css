@@ -42,6 +42,10 @@ body {
   padding: 1rem 2rem;
 }
 
+section {
+  flex: 1 1 auto;
+}
+
 /* HEADER */
 
 header {
@@ -60,9 +64,7 @@ header .navbar {
   align-items: center;
 }
 
-.diamond_logo {
-  width: 65px;
-}
+
 
 .icon_header:hover {
   color: var(--accent-color);
@@ -124,10 +126,6 @@ header .navbar {
 }
 
 /* COUNTDOWN SECTION */
-
-section {
-  flex: 1 1 auto;
-}
 
 .follow_description {
   font-size: 5px;
@@ -195,19 +193,19 @@ section {
   color: var(--accent-color);
 }
 
-/* OWNER STYLES */
+/* ICONS */
 
-.owner-status {
-  font-size: 2rem;
-  text-align: center;
-}
-
-/* Icons */
 .discord_icon {
   color: var(--accent-color);
   font-size: 25px;
   vertical-align: middle;
 }
+
+.diamond_logo {
+  width: 65px;
+}
+
+/* SCROLL DOWN DESCRIPTION */
 
 .scroll_down-container {
   position: absolute;
@@ -242,6 +240,48 @@ section {
   font-size: 20px;
   vertical-align: middle;
   margin-bottom: 3px;
+}
+
+/* NEWSLETTER */
+.newsletter_container {
+  background-color: var(--accent-color);
+  padding: 6rem;
+  text-align: center;
+  row-gap: 2.5rem;
+}
+
+.newsletter_title {
+  font-family: var(--font-4);
+  font-size: 1rem;
+  color: var(--bg-color);
+  padding-bottom: .75rem;
+}
+
+.newsletter_description {
+  color: hsl(0, 0%, 35%);
+  font-family: var(--font-4);
+  font-size: .75rem;
+  padding-bottom: 2rem;
+}
+
+.newsletter_input {
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 94%);
+  padding: 1.25rem .75rem;
+  color: hsl(0, 0%, 15%);
+  font-family: var(--font-4);
+  margin-right: -10px;
+}
+
+.newsletter_button {
+  background-color: var(--bg-color);
+  color: #fff;
+  padding: 1.25rem 2rem;
+  font-family: var(--font-4);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES */
