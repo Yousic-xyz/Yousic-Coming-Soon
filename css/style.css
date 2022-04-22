@@ -19,72 +19,27 @@
   --header-shadow: #000 0px 0px 5px;
 }
 
+/* BASE */
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background-color: var(--bg-color);
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
   color: var(--font-color);
-  font-family: var(--font-primary);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-section {
-  flex: 1 1 auto;
-}
-
-/* HEADER */
-
-header {
-  box-shadow: 0 1px 2px 0 #383838;
-}
-
-header .navbar {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-
-
-.icon_header:hover {
-  color: var(--accent-color);
-}
-
-.icon_header {
-  color: var(--font-color);
-  font-size: 25px;
-  margin: -10px;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
+img {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+  height: auto;
 }
-
-/* BUTTONS */
 
 .btn {
   display: inline-block;
@@ -108,27 +63,99 @@ header .navbar {
   box-shadow: none;
 }
 
+/* REUSABLE CSS CLASSES */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 6.5rem 0 1rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  box-shadow: 0 1px 2px 0 #383838;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.diamond_logo {
+  width: 65px;
+}
+
+.icon_header:hover {
+  color: var(--accent-color);
+}
+
+.icon_header {
+  color: var(--font-color);
+  font-size: 25px;
+  margin: -10px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
 .wallet-btn {
   border-radius: 5rem;
   border-color: transparent;
   font-size: .65rem;
 }
 
-.hero-btn {
-  border-radius: 4px;
-  padding: .75rem 1rem;
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+  background-color: var(--bg-color);
 }
 
-/* BANNER */
+/* HOME SECTION */
+.home_section {
+  height: 100vh;
+}
+
+/* COUNTDOWN */
+.countdown_container {
+  position: relative;
+  margin-top: 6rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .yousic_logo {
-  width: 100%;
-}
-
-/* COUNTDOWN SECTION */
-
-.follow_description {
-  font-size: 5px;
+  max-width: 75%;
 }
 
 .countdown {
@@ -176,16 +203,16 @@ header .navbar {
   border-radius: 0 0 4px 4px;
 }
 
-.countdown h1 {
+.discord_content h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
-  /* font-style: italic; */
+  font-style: italic;
   margin: 2rem 0;
   font-size: 1.25rem;
   text-align: center;
   font-family: var(--font-4);
 }
 
-.countdown p {
+.discord_content p {
   font-size: .75rem;
   font-family: var(--font-4);
   margin-bottom: 1rem;
@@ -193,7 +220,16 @@ header .navbar {
   color: var(--accent-color);
 }
 
-/* ICONS */
+.youser_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-btn {
+  border-radius: 4px;
+  padding: .75rem 1rem;
+}
 
 .discord_icon {
   color: var(--accent-color);
@@ -201,17 +237,17 @@ header .navbar {
   vertical-align: middle;
 }
 
-.diamond_logo {
-  width: 65px;
-}
+
 
 /* NEWSLETTER */
 .newsletter_container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.newsletter_content {
   background-color: var(--accent-color);
   padding: 6rem;
-  text-align: center;
-  row-gap: 2.5rem;
-  width: 100%;
 }
 
 .newsletter_title {
@@ -249,11 +285,15 @@ header .navbar {
 }
 
 /* SCROLL DOWN DESCRIPTION */
-
 .scroll_down-container {
-  margin-top: 6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
   text-align: center;
+  z-index: 100;
   transition: .3s;
+  cursor: pointer;
 }
 
 .scroll_down-container:hover {
@@ -281,23 +321,4 @@ header .navbar {
 }
 
 /* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) {
-  .menu {
-    gap: 1rem;
-  }
-
-  .wallet-btn {
-    margin-left: 0;
-    padding: 1rem;
-    max-width: 8rem;
-  }
-
-  .countdown h1 {
-    font-size: 2rem;
-  }
-
-  .countdown p {
-    font-size: 1rem;
-  }
-}
+/* FOR SMALL DEVICES */

@@ -20,7 +20,7 @@
   <header>
 
     <!-- NAVBAR -->
-    <div class="navbar">
+    <div class="navbar" id="header">
       <div class="logo">
         <a href="/">
           <img class="diamond_logo" src="images/Diamond Logo.png" alt="logo" />
@@ -47,65 +47,76 @@
 
   </header>
 
-  <!-- COUNTDOWN -->
-  <section class="container banner">
-    <div class="banner_logo">
-      <img class="yousic_logo" src="images/Yousic Logo.png" alt="">
-    </div>
-    <div class="owner-status"></div>
-    <div class="countdown">
-      <ul id="countdown" class="count-down" data-date="Jun 17, 2022 4:00:00 PM UTC">
-        <li class="clock-item">
-          <span class="count-number days">20</span>
-          <p class="count-text">Day</p>
-        </li>
-        <li class="clock-item">
-          <span class="count-number hours">20</span>
-          <p class="count-text">Hour</p>
-        </li>
-        <li class="clock-item">
-          <span class="count-number minutes">20</span>
-          <p class="count-text">Min</p>
-        </li>
-        <li class="clock-item">
-          <span class="count-number seconds">20</span>
-          <p class="count-text">Sec</p>
-        </li>
-      </ul>
-      <h1><i class='bx bx-coin'></i> Crypto Coin Coming Soon! <i class='bx bx-coin'></i></h1>
-      <p>Follow us to know when we go live!</p>
-      <a href="https://discord.gg/ZKYjzBZk7Q" target="_blank" rel="noopener noreferrer" class="hero-btn btn">
-        <span>Become a Youser </span>
-        <span><i class='bx bxl-discord-alt discord_icon'></i></span>
-      </a>
-    </div>
-  </section>
+  <main class="main">
+    <section class="home_section">
 
-  <!-- NEWSLETTER -->
-  <section class="newsletter_section">
-    <div class="newsletter_container">
-      <div>
-        <h2 class="newsletter_title">
-          Subscribe For Updates
-        </h2>
-        <p class="newsletter_description">
-          Don't miss out on our upcoming release! <br> Subscribe to our email newsletter to get the latest up to date
-          news.
-        </p>
+      <!-- COUNTDOWN -->
+      <div class="countdown_container container">
+        <div class="countdown_content">
+          <div class="banner">
+            <img class="yousic_logo" src="images/Yousic Logo.png" alt="">
+          </div>
+          <div class="countdown">
+            <ul id="countdown" class="count-down" data-date="Jun 17, 2022 4:00:00 PM UTC">
+              <li class="clock-item">
+                <span class="count-number days">20</span>
+                <p class="count-text">Day</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number hours">20</span>
+                <p class="count-text">Hour</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number minutes">20</span>
+                <p class="count-text">Min</p>
+              </li>
+              <li class="clock-item">
+                <span class="count-number seconds">20</span>
+                <p class="count-text">Sec</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="discord_content">
+          <h1><i class='bx bx-coin'></i> Crypto Coin Coming Soon! <i class='bx bx-coin'></i></h1>
+          <p>Follow us to know when we go live!</p>
+          <div class="youser_btn">
+            <a href="https://discord.gg/ZKYjzBZk7Q" target="_blank" rel="noopener noreferrer" class="hero-btn btn">
+              <span>Become a Youser </span>
+              <span><i class='bx bxl-discord-alt discord_icon'></i></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <form method="POST" class="newsletter_subscribe" data-netlify="true" name="Email Form">
-        <input type="email" placeholder="Enter Your Email" class="newsletter_input" name="Email">
-        <button class="newsletter_button">
-          SUBSCRIBE
-        </button>
-      </form>
-    </div>
-    <div class="scroll_down-container">
-      <a href="" class="scroll_down">Scroll Down For More Info <i class='bx bx-down-arrow-alt arrow_down'></i></a>
-    </div>
-  </section>
+
+      <!-- NEWSLETTER -->
+      <div class="newsletter_container">
+        <div class="newsletter_content">
+          <h2 class="newsletter_title">
+            Subscribe For Updates
+          </h2>
+          <p class="newsletter_description">
+            Don't miss out on our upcoming release! <br> Subscribe to our email newsletter to get the latest up to
+            date
+            news.
+          </p>
+          <form method="POST" class="newsletter_subscribe" data-netlify="true" name="Email Form">
+            <input type="email" placeholder="Enter Your Email" class="newsletter_input" name="Email">
+            <button class="newsletter_button">
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- SCROLL DOWN -->
+      <div class="scroll_down-container">
+        <a href="" class="scroll_down">Scroll Down For More Info <i class='bx bx-down-arrow-alt arrow_down'></i></a>
+      </div>
+    </section>
 
 
+  </main>
+  <script src="js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/app.js"></script>
