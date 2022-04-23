@@ -134,10 +134,6 @@ header .navbar {
 }
 
 /* HOME */
-.home_section {
-  height: 100vh;
-}
-
 /* COUNTDOWN */
 .countdown_container {
   padding-top: 4rem;
@@ -282,42 +278,6 @@ header .navbar {
   cursor: pointer;
 }
 
-/* SCROLL DOWN DESCRIPTION */
-.scroll_down-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  text-align: center;
-  z-index: 100;
-  transition: .3s;
-  cursor: pointer;
-}
-
-.scroll_down-container:hover {
-  transform: translateY(0.25rem);
-}
-
-.scroll_down {
-  font-family: var(--font-4);
-  text-decoration: none;
-  color: var(--accent-color);
-  text-align: center;
-  font-weight: 100;
-  font-size: .75rem;
-}
-
-.scroll_down:hover {
-  color: var(--font-color);
-}
-
-.arrow_down {
-  text-align: center;
-  font-size: 20px;
-  vertical-align: middle;
-  margin-bottom: 3px;
-}
-
 /* MEDIA QUERIES */
 /* FOR LARGE DEVICES */
 @media screen and (max-width: 800px) {
@@ -374,10 +334,6 @@ header .navbar {
 
   .newsletter_button {
     padding: 1.25rem .75rem;
-    font-size: .5rem;
-  }
-
-  .scroll_down {
     font-size: .5rem;
   }
 }
