@@ -1,16 +1,12 @@
 /* FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-/* GLOBAL STYLES */
 
 :root {
   --font-primary: 'Lato', sans-serif;
   --font-secondary: 'Arvo', serif;
-  --font-3: 'Rubik Glitch', cursive;
-  --font-4: 'Press Start 2P', cursive;
+  --font-3: 'Press Start 2P', cursive;
   --font-code: 'Roboto', monospace;
   --bg-color: #000000;
   --font-color: #ffffff;
@@ -46,7 +42,7 @@ img {
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   font-style: italic;
   font-weight: bold;
   font-size: .75rem;
@@ -75,6 +71,12 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+/* CHANGE BACKGROUND HEADER */
+.scroll-header {
+  background-color: var(--bg-color);
+  box-shadow: 0 1px 2px 0 #383838;
 }
 
 /* HEADER */
@@ -125,12 +127,6 @@ header .navbar {
   border-radius: 5rem;
   border-color: transparent;
   font-size: .65rem;
-}
-
-/* CHANGE BACKGROUND HEADER */
-.scroll-header {
-  background-color: var(--bg-color);
-  box-shadow: 0 1px 2px 0 #383838;
 }
 
 /* HOME */
@@ -201,12 +197,12 @@ header .navbar {
   margin: 2rem 0;
   font-size: 1.25rem;
   text-align: center;
-  font-family: var(--font-4);
+  font-family: var(--font-3);
 }
 
 .discord_content p {
   font-size: .75rem;
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   margin-bottom: 1rem;
   text-align: center;
   color: var(--accent-color);
@@ -244,7 +240,7 @@ header .navbar {
 }
 
 .newsletter_title {
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   font-size: 1rem;
   color: var(--bg-color);
   padding-bottom: .75rem;
@@ -252,7 +248,7 @@ header .navbar {
 
 .newsletter_description {
   color: hsl(0, 0%, 35%);
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   font-size: .75rem;
   padding-bottom: 2rem;
   line-height: 2;
@@ -264,7 +260,7 @@ header .navbar {
   background-color: hsl(0, 0%, 94%);
   padding: 1.25rem .75rem;
   color: hsl(0, 0%, 15%);
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   margin-right: -10px;
 }
 
@@ -272,7 +268,7 @@ header .navbar {
   background-color: var(--bg-color);
   color: #fff;
   padding: 1.25rem 2rem;
-  font-family: var(--font-4);
+  font-family: var(--font-3);
   border: none;
   outline: none;
   cursor: pointer;
