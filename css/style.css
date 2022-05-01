@@ -2,11 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
   --font-primary: 'Lato', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-3: 'Press Start 2P', cursive;
+  --font-4: 'VT323', monospace;
   --font-code: 'Roboto', monospace;
   --bg-color: #000000;
   --font-color: #ffffff;
@@ -202,8 +204,8 @@ header .navbar {
 }
 
 .discord_content p {
-  font-size: .75rem;
-  font-family: var(--font-3);
+  font-size: 1.5rem;
+  font-family: var(--font-4);
   margin-bottom: 2rem;
   text-align: center;
   color: var(--accent-color);
@@ -241,7 +243,8 @@ header .navbar {
 
 .about_description {
   text-align: center;
-  font-size: .75rem;
+  font-size: 1.5rem;
+  font-family: var(--font-4);
 }
 
 .about_content {
@@ -261,7 +264,6 @@ header .navbar {
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
-
 }
 
 .column_title {
@@ -272,10 +274,9 @@ header .navbar {
 
 .column_description {
   text-align: center;
-  font-size: .75rem;
-  line-height: 1rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: var(--font-4);
 }
 
 /* NEWSLETTER */
@@ -298,10 +299,10 @@ header .navbar {
 
 .newsletter_description {
   color: hsl(0, 0%, 35%);
-  font-family: var(--font-3);
-  font-size: .75rem;
+  font-family: var(--font-4);
+  font-size: 1.5rem;
   padding-bottom: 2rem;
-  line-height: 2;
+  line-height: 1;
 }
 
 .newsletter_input {
@@ -327,6 +328,12 @@ header .navbar {
 
 /* MEDIA QUERIES */
 /* FOR LARGE DEVICES */
+@media screen and (max-width: 1000px) {
+  .about_content {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .countdown .clock-item {
     width: 50px;
@@ -358,7 +365,11 @@ header .navbar {
   }
 
   .discord_content p {
-    font-size: .65rem;
+    font-size: 1.1rem;
+  }
+
+  .about_container {
+    padding: 6rem;
   }
 
   .newsletter_content {
@@ -366,22 +377,22 @@ header .navbar {
   }
 
   .newsletter_title {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   .newsletter_description {
-    font-size: .6rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
   .newsletter_input {
     padding: 1.25rem .75rem;
-    font-size: .5rem;
+    font-size: .75rem;
   }
 
   .newsletter_button {
     padding: 1.25rem .75rem;
-    font-size: .5rem;
+    font-size: .75rem;
   }
 }
 
@@ -417,7 +428,31 @@ header .navbar {
   }
 
   .discord_content p {
-    font-size: .5rem;
+    font-size: 1rem;
+  }
+
+  .about_container {
+    padding: 4rem;
+  }
+
+  .about_title {
+    font-size: 1rem;
+  }
+
+  .column i {
+    font-size: 7rem;
+  }
+
+  .column_title {
+    font-size: .75rem;
+  }
+
+  .column_description {
+    font-size: 1rem;
+  }
+
+  .about_description {
+    font-size: 1rem;
   }
 
   .newsletter_content {
@@ -425,22 +460,22 @@ header .navbar {
   }
 
   .newsletter_title {
-    font-size: .6rem;
+    font-size: .8rem;
   }
 
   .newsletter_description {
-    font-size: .5rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
   .newsletter_input {
     padding: 1.25rem .75rem;
-    font-size: .5rem;
+    font-size: .55rem;
   }
 
   .newsletter_button {
     padding: 1.25rem .75rem;
-    font-size: .5rem;
+    font-size: .55rem;
   }
 }
 
@@ -460,7 +495,11 @@ header .navbar {
   }
 
   .discord_content p {
-    font-size: .4rem;
+    font-size: .8rem;
+  }
+
+  .about_container {
+    padding: 2rem;
   }
 
   .newsletter_content {
@@ -468,21 +507,21 @@ header .navbar {
   }
 
   .newsletter_title {
-    font-size: .6rem;
+    font-size: .75drem;
   }
 
   .newsletter_description {
-    font-size: .5rem;
+    font-size: .75rem;
     line-height: 1.5;
   }
 
   .newsletter_input {
     padding: 1rem .5rem;
-    font-size: .3rem;
+    font-size: .5rem;
   }
 
   .newsletter_button {
     padding: 1rem .5rem;
-    font-size: .4rem;
+    font-size: .5rem;
   }
 }
