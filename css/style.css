@@ -369,8 +369,6 @@ header .navbar {
   }
   .diamond_logo{
     width: 45px;
-    display: flex;
-    justify-content: center;
   }
 
   .countdown .clock-item {
@@ -448,6 +446,10 @@ header .navbar {
 
 /* FOR MEDIUM DEVICES */
 @media screen and (max-width: 600px) {
+  .icon_header{
+    display: none;
+  }
+  
   .countdown .clock-item {
     width: 40px;
   }
