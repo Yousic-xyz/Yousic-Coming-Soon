@@ -98,7 +98,7 @@ header .navbar {
   align-items: center;
 }
 
-.menu {
+.nav_menu {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -121,7 +121,7 @@ header .navbar {
 .navbar {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -131,7 +131,17 @@ header .navbar {
   border-color: transparent;
   font-size: .65rem;
 }
-
+.nav_toggle{
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.nav_close{
+  display: none;
+}
+.nav_toggle{
+  display: none;
+}
 /* COUNTDOWN */
 .countdown_container {
   padding-top: 4rem;
@@ -335,6 +345,34 @@ header .navbar {
 }
 
 @media screen and (max-width: 800px) {
+  .nav_menu{
+    position: fixed;
+    background-color: var(--bg-color);
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 15%;
+    transition: .3s;
+    justify-content: center;
+  }
+  .nav_close{
+    display: block;
+    font-size: 2rem;
+    color: var(--btn-bg-color);
+    position: absolute;
+    top: 1.25rem;
+    right: 1.75rem;
+    cursor: pointer;
+  }
+  .nav_toggle{
+    display: flex;
+  }
+  .diamond_logo{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+  }
+
   .countdown .clock-item {
     width: 50px;
   }
@@ -352,12 +390,12 @@ header .navbar {
   }
 
   .hero-btn {
-    padding: .5rem .75rem;
-    font-size: .65rem;
+    padding: .75rem .75rem;
+    font-size: .75rem;
   }
 
   .discord_content h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .discord_icon {
@@ -365,11 +403,23 @@ header .navbar {
   }
 
   .discord_content p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .about_container {
     padding: 6rem;
+  }
+  .about_title{
+    font-size: 1.25rem;
+  }
+  .about_description{
+    font-size: 1.25rem;
+  }
+  .column_title{
+    font-size: .85rem;
+  }
+  .column_description{
+    font-size: 1.25rem;
   }
 
   .newsletter_content {
@@ -524,4 +574,9 @@ header .navbar {
     padding: 1rem .5rem;
     font-size: .5rem;
   }
+}
+
+/* SHOW MENU */
+.show-menu{
+  top: 0;
 }
