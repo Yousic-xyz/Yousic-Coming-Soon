@@ -39,21 +39,33 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
     background: var(--btn-bg-color);
     color: var(--accent-color);
     font-family: Ultra, serif;
-    letter-spacing: -10px;
-    word-spacing: 10px;
+    letter-spacing: -11px;
+    word-spacing: 12px;
     font-weight: bolder;
     font-size: 1.5rem;
     text-transform: capitalize;
-    transition: all 0.3s ease;
-    box-shadow: 4px 4px 0 0 var(--accent-color);
     cursor: pointer;
     position: relative;
     text-decoration: none;
     outline: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 0 0 var(--accent-color);
+}
+
+.hero-btn {
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.button-text {
+    width: fit-content;
+    margin-bottom: .25rem;
 }
 
 .btn:hover {
@@ -238,24 +250,6 @@ header .navbar {
     margin-bottom: 2rem;
     text-align: center;
     color: var(--accent-color);
-}
-
-.youser_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-cta {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.hero-btn {
-    border-radius: 4px;
-    padding: .25rem 1rem .5rem 1rem;
-    margin-bottom: .25rem;
 }
 
 .discord_icon {
