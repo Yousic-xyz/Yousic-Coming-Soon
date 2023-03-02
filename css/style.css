@@ -336,8 +336,8 @@ header .navbar {
 .newsletter_section {
     background-image: url('../images/performance.jpeg');
     background-repeat: no-repeat;
-    background-position: top left;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
+    background-position: top right;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
 }
 
 .newsletter_container {
