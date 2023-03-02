@@ -393,8 +393,8 @@ header .navbar {
     transition: all 0.3s ease;
     position: relative;
     right: 4px;
-    top: 2px;
-    padding: .5rem 1rem 1.5rem 1rem;
+    top: 0.5px;
+    padding: .5rem 1rem .5rem 1rem;
     letter-spacing: -10px;
     font-size: 1.5rem;
     width: 8rem;
