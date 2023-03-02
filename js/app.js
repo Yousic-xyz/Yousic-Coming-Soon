@@ -1,29 +1,37 @@
 // CHANGE BACKGROUND HEADER
 function scrollHeader() {
     const header = document.getElementById('navbar')
+    const button = document.getElementById('btn')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if (this.scrollY >= 50) {
+        header.classList.add('scroll-header');
+        button.classList.add('scroll-remove');
+    } else {
+        header.classList.remove('scroll-header');
+        button.classList.remove('scroll-remove');
+    }
 }
+
 window.addEventListener('scroll', scrollHeader)
 
 
 // SHOW MENU
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
 
 // MENU SHOW
 /* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     })
 }
 
 // MENU HIDDEN
 /* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click', () =>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     })
 }
