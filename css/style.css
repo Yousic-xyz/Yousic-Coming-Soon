@@ -65,6 +65,7 @@ img {
 
 .button-text {
     width: fit-content;
+    height: fit-content;
     margin-bottom: .25rem;
 }
 
@@ -375,11 +376,13 @@ header .navbar {
     margin-left: 10px;
     border-radius: 10px 0 0 10px;
     font-size: 1rem;
+    height: 3rem;
     width: 18rem;
     padding: .75rem 0 .75rem 2rem;
 }
 
 .newsletter_button {
+    display: inline-block;
     background-color: var(--bg-color);
     color: #fff;
     font-family: Ultra, serif;
@@ -390,10 +393,16 @@ header .navbar {
     transition: all 0.3s ease;
     position: relative;
     right: 4px;
-    top: 0.5px;
-    padding: .575rem 1rem;
+    top: 2px;
+    padding: .5rem 1rem 1.5rem 1rem;
     letter-spacing: -10px;
     font-size: 1.5rem;
+    width: 8rem;
+    height: 3rem;
+}
+
+.newsletter_button_text {
+    margin-bottom: 2rem;
 }
 
 .newsletter_button:hover {
@@ -590,18 +599,27 @@ header .navbar {
         line-height: 1.5;
     }
 
+    .newsletter_subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+
     .newsletter_input {
+        margin-left: 0;
         font-size: .75rem;
-        width: 14rem;
-        padding: .75rem 0 .75rem 2rem;
+        width: 15rem;
+        border-radius: 10px;
+
     }
 
     .newsletter_button {
-        position: relative;
-        right: 4px;
-        padding: .687rem 1rem;
-        letter-spacing: -6px;
-        font-size: 1rem;
+        top: 0;
+        font-size: 1.25rem;
+        letter-spacing: -8px;
+        border-radius: 10px;
     }
 }
 
@@ -646,16 +664,14 @@ header .navbar {
 
     .newsletter_input {
         font-size: .75rem;
-        width: 10rem;
-        padding: .75rem 0 .75rem 2rem;
+        width: 15rem;
+        padding: .75rem 0 .75rem 1rem;
     }
 
     .newsletter_button {
-        position: relative;
-        right: 4px;
-        padding: .687rem 1rem;
-        letter-spacing: -6px;
-        font-size: 1rem;
+        top: 0;
+        font-size: 1.25rem;
+        letter-spacing: -8px;
     }
 }
 
