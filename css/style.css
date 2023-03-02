@@ -254,7 +254,7 @@ header .navbar {
 
 .hero-btn {
     border-radius: 4px;
-    padding: .5rem 1rem;
+    padding: .25rem 1rem .5rem 1rem;
     margin-bottom: .25rem;
 }
 
@@ -539,6 +539,7 @@ header .navbar {
         letter-spacing: -15px;
         word-spacing: 15px;
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .discord_content h1 {
