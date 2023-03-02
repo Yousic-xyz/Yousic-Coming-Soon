@@ -12,10 +12,10 @@
     --font-4: 'VT323', monospace;
     --font-ubuntu: 'Ubuntu', sans-serif;
     --font-code: 'Roboto', monospace;
-    --bg-color: #000000;
+    --bg-color: #1D1D1D;
     --font-color: #ffffff;
     --btn-bg-color: #ffffff;
-    --accent-color: #BD9E5A;
+    --accent-color: #C6AB65;
     --header-shadow: #000 0px 0px 5px;
 }
 
@@ -47,7 +47,7 @@ img {
     background: var(--btn-bg-color);
     color: var(--accent-color);
     font-family: var(--font-ubuntu);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
     text-transform: capitalize;
     transition: all 0.3s ease;
@@ -149,19 +149,24 @@ header .navbar {
 }
 
 /* COUNTDOWN */
-.countdown_container {
-    padding-top: 4rem;
-    position: relative;
-}
-
-.banner {
+.banner_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4rem;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/performance.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+
 }
 
 .yousic_logo {
     max-width: 75%;
+    margin-bottom: 8rem;
 }
 
 .countdown {
@@ -322,20 +327,23 @@ header .navbar {
 }
 
 .newsletter_content {
-    background-color: var(--accent-color);
+    background-image: url('../images/performance.jpeg');
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     padding: 6rem;
 }
 
 .newsletter_title {
     font-family: var(--font-3);
     font-size: 1rem;
-    color: var(--bg-color);
+    color: var(--accent-color);
     padding-bottom: .75rem;
     word-spacing: -5px;
 }
 
 .newsletter_description {
-    color: hsl(0, 0%, 35%);
+    color: var(--font-color);
+    opacity: 70%;
     font-family: var(--font-ubuntu);
     font-size: 1rem;
     padding-bottom: 2rem;
@@ -350,7 +358,7 @@ header .navbar {
     color: hsl(0, 0%, 15%);
     font-family: var(--font-3);
     margin-right: -10px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
     word-spacing: -5px;
 }
 
@@ -362,7 +370,7 @@ header .navbar {
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
 }
 
 
