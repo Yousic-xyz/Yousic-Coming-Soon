@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 @font-face {
-    font-family: Ultra;
+    font-family: d;
     src: url("../fonts/Ultra.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Ultra;
+    src: url("../fonts/Kusanagi.otf") format("opentype");
 }
 
 :root {
@@ -42,10 +47,8 @@ img {
     background: var(--btn-bg-color);
     color: var(--accent-color);
     font-family: Ultra, serif;
-    letter-spacing: -11px;
-    word-spacing: 12px;
-    font-weight: bolder;
-    font-size: 1.5rem;
+    font-weight: normal;
+    font-size: .75rem;
     text-transform: capitalize;
     cursor: pointer;
     position: relative;
@@ -66,7 +69,6 @@ img {
 .button-text {
     width: fit-content;
     height: fit-content;
-    margin-bottom: .25rem;
 }
 
 .btn:hover {
@@ -193,9 +195,26 @@ header .navbar {
     height: 82vh;
 }
 
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .yousic_logo {
     max-width: 75%;
-    margin-bottom: 4rem;
+}
+
+.coming_soon {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-family: Ultra, serif;
+    font-size: 2rem;
+    background: #F2E897;
+    background: radial-gradient(circle farthest-side at center center, #F2E897 0%, #926228 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .countdown {
@@ -275,10 +294,8 @@ header .navbar {
 .about_title {
     text-align: center;
     padding-bottom: .5rem;
-    letter-spacing: -30px;
-    word-spacing: 35px;
     font-family: Ultra, serif;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .about_description {
@@ -311,12 +328,12 @@ header .navbar {
 }
 
 .column_title {
-    font-size: 2.5rem;
+    font-size: 1.15rem;
     text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 5px;
     padding-bottom: 1rem;
     line-height: 1.5rem;
-    letter-spacing: -20px;
-    word-spacing: 20px;
     font-family: Ultra, serif;
 }
 
@@ -360,9 +377,8 @@ header .navbar {
 
 .newsletter_title {
     font-family: Ultra, serif;
-    letter-spacing: -25px;
-    word-spacing: 30px;
-    font-size: 3rem;
+    word-spacing: 5px;
+    font-size: 1.5rem;
     color: var(--accent-color);
     padding-bottom: .75rem;
 }
@@ -402,9 +418,9 @@ header .navbar {
     transition: all 0.3s ease;
     position: relative;
     right: 4px;
-    padding: .5rem 1rem 1rem 1rem;
-    letter-spacing: -10px;
-    font-size: 1.5rem;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: .75rem;
+    font-weight: normal;
     width: 8rem;
     height: 3rem;
 }
@@ -472,9 +488,7 @@ header .navbar {
 
     .hero-btn {
         padding: .5rem 1.5rem;
-        letter-spacing: -15px;
-        word-spacing: 15px;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .discord_content h1 {
@@ -482,11 +496,15 @@ header .navbar {
     }
 
     .discord_icon {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .discord_content p {
         font-size: 1.4rem;
+    }
+
+    .coming_soon {
+        font-size: 1.5rem;
     }
 
     .about_container {
@@ -498,8 +516,7 @@ header .navbar {
     }
 
     .column_title {
-        letter-spacing: -18px;
-        font-size: 2.2rem;
+        font-size: 1.25rem;
     }
 
     .column_description {
@@ -511,9 +528,7 @@ header .navbar {
     }
 
     .newsletter_title {
-        letter-spacing: -18px;
-        word-spacing: 20px;
-        font-size: 2.5rem;
+        font-size: 1.25rem;
     }
 
 
@@ -537,6 +552,10 @@ header .navbar {
         gap: .75rem;
     }
 
+    .coming_soon {
+        font-size: 1.25rem;
+    }
+
     .countdown .clock-item .count-number {
         font-size: .75rem;
     }
@@ -547,14 +566,12 @@ header .navbar {
 
     .hero-btn {
         padding: .5rem 1.5rem;
-        letter-spacing: -15px;
-        word-spacing: 15px;
-        font-size: 2rem;
+        font-size: .75rem;
         margin-bottom: 2rem;
     }
 
     .discord_content h1 {
-        font-size: .8rem;
+        font-size: .5rem;
     }
 
     .discord_icon {
@@ -570,9 +587,7 @@ header .navbar {
     }
 
     .about_title {
-        letter-spacing: -18px;
-        word-spacing: 20px;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .column i {
@@ -580,8 +595,7 @@ header .navbar {
     }
 
     .column_title {
-        letter-spacing: -18px;
-        font-size: 2.2rem;
+        font-size: 1rem;
     }
 
     .column_description {
@@ -597,9 +611,7 @@ header .navbar {
     }
 
     .newsletter_title {
-        letter-spacing: -15px;
-        word-spacing: 20px;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .newsletter_description {
@@ -625,8 +637,7 @@ header .navbar {
 
     .newsletter_button {
         top: 0;
-        font-size: 1.25rem;
-        letter-spacing: -8px;
+        font-size: .75rem;
         border-radius: 10px;
     }
 }
@@ -635,8 +646,11 @@ header .navbar {
 @media screen and (max-width: 400px) {
     .hero-btn {
         padding: .5rem 1rem;
-        letter-spacing: -10px;
-        font-size: 1.5rem;
+        font-size: .75rem;
+    }
+
+    .coming_soon {
+        font-size: 1rem;
     }
 
     .discord_content h1 {
@@ -651,6 +665,18 @@ header .navbar {
         font-size: .8rem;
     }
 
+    .about_title {
+        font-size: 1.25rem;
+    }
+
+    .column_title {
+        font-size: .75rem;
+    }
+
+    .column_description {
+        font-size: 1rem;
+    }
+
     .about_container {
         padding: 4rem 2rem 1rem;
     }
@@ -660,9 +686,7 @@ header .navbar {
     }
 
     .newsletter_title {
-        letter-spacing: -15px;
-        word-spacing: 20px;
-        font-size: 2rem;
+        font-size: .75rem;
     }
 
     .newsletter_description {
@@ -674,12 +698,6 @@ header .navbar {
         font-size: .75rem;
         width: 15rem;
         padding: .75rem 0 .75rem 1rem;
-    }
-
-    .newsletter_button {
-        top: 0;
-        font-size: 1.25rem;
-        letter-spacing: -8px;
     }
 }
 
