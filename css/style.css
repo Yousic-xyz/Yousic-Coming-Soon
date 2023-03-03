@@ -280,7 +280,7 @@ header .navbar {
     color: var(--accent-color);
     font-size: 25px;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-left: 6px;
 }
 
 /* ABOUT SECTION */
@@ -496,7 +496,7 @@ header .navbar {
     }
 
     .discord_icon {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .discord_content p {
@@ -575,7 +575,7 @@ header .navbar {
     }
 
     .discord_icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .discord_content p {
