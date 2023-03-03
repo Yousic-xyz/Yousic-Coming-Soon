@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448ca857-93aa-41f7-904b-b469440b8ec4" name="Changes" comment="update discord button">
+    <list default="true" id="448ca857-93aa-41f7-904b-b469440b8ec4" name="Changes" comment="update discord link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +97,7 @@
       <workItem from="1677726331977" duration="20000" />
       <workItem from="1677772388935" duration="13074000" />
       <workItem from="1677804974871" duration="179000" />
-      <workItem from="1677862645365" duration="27000" />
+      <workItem from="1677862645365" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="update html">
       <created>1677719701930</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677805150019</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update discord link">
+      <created>1677862686384</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677862686385</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +232,7 @@
     <MESSAGE value="update newsletter svg width" />
     <MESSAGE value="update media queries and font" />
     <MESSAGE value="update discord button" />
-    <option name="LAST_COMMIT_MESSAGE" value="update discord button" />
+    <MESSAGE value="update discord link" />
+    <option name="LAST_COMMIT_MESSAGE" value="update discord link" />
   </component>
 </project>
