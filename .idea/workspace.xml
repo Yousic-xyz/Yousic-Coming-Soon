@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448ca857-93aa-41f7-904b-b469440b8ec4" name="Changes" comment="update media queries for newsletter input">
+    <list default="true" id="448ca857-93aa-41f7-904b-b469440b8ec4" name="Changes" comment="fix nav menu close icon shift">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -98,7 +98,7 @@
       <workItem from="1677772388935" duration="13074000" />
       <workItem from="1677804974871" duration="179000" />
       <workItem from="1677862645365" duration="543000" />
-      <workItem from="1677953510305" duration="75000" />
+      <workItem from="1677953510305" duration="2466000" />
     </task>
     <task id="LOCAL-00001" summary="update html">
       <created>1677719701930</created>
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677863102828</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix svg gap">
+      <created>1677953634583</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677953634583</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +249,8 @@
     <MESSAGE value="update discord button" />
     <MESSAGE value="update discord link" />
     <MESSAGE value="update menu icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="update menu icon" />
+    <MESSAGE value="fix svg gap" />
+    <MESSAGE value="fix nav menu close icon shift" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix nav menu close icon shift" />
   </component>
 </project>
