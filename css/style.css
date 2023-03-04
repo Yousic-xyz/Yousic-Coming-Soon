@@ -187,6 +187,12 @@ header .navbar {
     display: block;
 }
 
+.second {
+    position: relative;
+    bottom: 2px;
+}
+
+
 .countdown_section {
     background-image: url('../images/performance.jpeg');
     background-repeat: no-repeat;
