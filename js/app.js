@@ -35,3 +35,23 @@ if (navClose) {
         navMenu.classList.remove('show-menu');
     })
 }
+
+// Email JS
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_gbwjkad','template_f1fzreb', '#contact-form','Jvm3rUHTtGo3Sy5Oh').then(()=>{
+        contactMessage.innerText = 'Successfully Submitted!'
+        setTimeout(()=>{
+            contactMessage.innerText = ''
+        }, 5000)
+        contactForm.reset()
+    }, ()=>{
+        contactMessage.innerText = 'Submission Failed (service error)'
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+

@@ -128,18 +128,23 @@
                     Subscribe For Updates
                 </h2>
                 <p class="newsletter_description">
-                    Don't miss out on our upcoming release! <br> Subscribe to our email newsletter to get the latest up
-                    to
-                    date
-                    news.
+                    Don't miss out on our upcoming release! <br> Sign up for the waitlist!
                 </p>
-                <form method="POST" class="newsletter_subscribe" data-netlify="true" name="Email Form">
-                    <label>
-                        <input type="email" placeholder="Enter Your Email" class="newsletter_input" name="Email">
-                    </label>
-                    <button class="newsletter_button">
-                        <span class="newsletter_button_text">SUBSCRIBE</span>
-                    </button>
+                <form action="" class="newsletter_subscribe" id="contact-form" name="contact-form">
+                    <div class="contact-form">
+                        <div>
+                            <label>
+                                <input type="email" placeholder="Enter Your Email" class="newsletter_input" id="contact-email" name="user_email">
+                            </label>
+                            <button type="submit" class="newsletter_button">
+                                <span class="newsletter_button_text">SUBSCRIBE</span>
+                            </button>
+                        </div>
+                        <div>
+                            <p class="contact-message" id="contact-message"></p>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -148,6 +153,7 @@
 </main>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@metamask/onboarding@1.0.1/dist/metamask-onboarding.bundle.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="js/metamask.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/app.js"></script>
